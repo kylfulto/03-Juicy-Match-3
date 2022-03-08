@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Grid/grid.gd" type="Script" id=1]
 [ext_resource path="res://Grid/Game.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://UI/Level.gd" type="Script" id=4]
 [ext_resource path="res://UI/Goals.gd" type="Script" id=5]
 [ext_resource path="res://Assets/shelf.png" type="Texture" id=6]
+[ext_resource path="res://Assets/love.wav" type="AudioStream" id=7]
 [ext_resource path="res://Assets/pop.wav" type="AudioStream" id=8]
 
 [sub_resource type="Theme" id=5]
@@ -21,6 +22,10 @@ level = 1
 position = Vector2( 274.5, 551.25 )
 scale = Vector2( 2.91204, 4.7618 )
 texture = ExtResource( 6 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+autoplay = true
 
 [node name="Sounds" type="Node" parent="."]
 
